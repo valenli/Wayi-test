@@ -2,11 +2,11 @@
 
 import Modal from "./Modal";
 import { addTodo, getAllTodos } from "@/api";
-import { useRouter } from "next/navigation";
+
 import { FormEventHandler, useState } from "react";
 
 const AddTask = ({ setTaskList }) => {
-  const router = useRouter();
+
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const [newTaskValue, setNewTaskValue] = useState<string>("");
   const [newTaskDescription, setNewTaskDescription] = useState<string>("");

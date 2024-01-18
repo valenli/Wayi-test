@@ -5,7 +5,7 @@ import TodoList from "./components/TodoList";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  // const tasks =  getAllTodos();
+
   const [taskList, setTaskList] = useState([]);
 
   useEffect(() => {
